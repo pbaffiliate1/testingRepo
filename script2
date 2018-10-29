@@ -1,0 +1,29 @@
+// import the scriptr.io http module to issue calls to remote APIs
+var http = require("http");
+
+// retrieve the station parameter from the request
+var station = request.parameters.station; // use location = 260
+
+var weatherStationAPI = "http://fawn.ifas.ufl.edu/controller.php/today/obs/" + station + ";json";
+// invoke the weatherStationAPI third party API
+var callResult = http.request({
+        "url" : weatherStationAPI
+    });
+return callResult;
+// parse the result of the call using regular JSON object
+var weatherInfo = JSON.parse(callResult.body); // returns an array of today's observations
+var latestInfo = weatherInfo[0]; // get latest observation, first one on the list
+var temperature2m = latestInfo.t2m;
+var windSpeed = latestInfo.ws;
+// return the result of the function call
+return getAmbianceConfiguration(temperature2m, windSpeed);
+
+// define a bespoke function
+function getAmbianceConfiguration(temp, wind) {
+    var tempCategory = (temp < 18) ? "Cold" : (temp >= 18 && temp <= 25) ? "Cool" : "Hot";
+    var windCategory = wind < 20 ? "No Wind" : (wind > 20 && wind < 50) ? "Windy" : "Strong Wind";
+    return {
+        "temp" : tempCategory,
+        "wind" : windCategory
+    };
+}
