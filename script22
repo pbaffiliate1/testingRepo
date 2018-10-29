@@ -3,7 +3,7 @@ var http = require("http");
 
 // retrieve the station parameter from the request
 var station = request.parameters.station; // use location = 260
-
+//dont return
 var weatherStationAPI = "http://fawn.ifas.ufl.edu/controller.php/today/obs/" + station + ";json";
 // invoke the weatherStationAPI third party API
 var callResult = http.request({
