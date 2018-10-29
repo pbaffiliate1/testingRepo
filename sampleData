@@ -2,7 +2,7 @@ var x =
 
 [ 
     ['Language', 'Speakers (in millions)'],
-    ['German',  5.85],
+    ['German',  5.23],
     ['French',  1.66],
     ['Italian', 0.316],
     ['Romansh', 0.0791]
