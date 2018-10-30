@@ -1,0 +1,21 @@
+var file = require("file");
+var result = null;
+var test = {
+    "ACL":
+        {
+            "execute":"nobody",
+            "read":"nobody",
+            "write":"nobody"
+        },
+    "contentType":"application/script",
+    "content" : "return 1;"
+}
+
+runAs(function(){
+
+// Create a document with the privileges of the device issuing the request
+result = file.setContent("nameTest7", JSON.stringify(test));
+
+}, "dddd");
+
+return result;
