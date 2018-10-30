@@ -3,7 +3,7 @@ var result = null;
 var test = {
     "ACL":
         {
-            "execute":"nobody",
+            "execute":"authenticated",
             "read":"nobody",
             "write":"nobody"
         },
