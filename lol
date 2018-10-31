@@ -1,1 +1,1 @@
-return "lolzzz";
+return "lol";
