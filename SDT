@@ -16,6 +16,7 @@ var decision = [];
 //PRESCRIPT START
 var y;
 var x = 1;
+var k;
 //PRESCRIPT END
 
 //RULES EVALUATION START
