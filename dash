@@ -156,7 +156,7 @@
                         <div class="box-content">
                           <div  style="height: 30px;" tooltip-placement="bottom" uib-tooltip="Grid" class="box-label">Grid</div>
                           <div  style="height: calc(100% - 30px)" > <scriptr-grid
-										columns-definition='[{headerName: "Name", field: "name"},{headerName: "Model", field: "model"},{headerName: "Price", field: "price"}]'
+										columns-definition='[{headerName: "Names", field: "name"},{headerName: "Model", field: "model"},{headerName: "Price", field: "price"}]'
 										row-data='[{name: "Toyota", model: "Celica", price: 35000},{name: "Ford", model: "Mondeo", price: 32000},{name: "Porsche", model: "Boxter", price: 72000}]'
 										enable-sorting='true'
 										enable-delete-row='true'
