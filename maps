@@ -1,6 +1,6 @@
 
 //Define mappings between input keys and output keys
-var mappings = {"esm":{"key":"name","value":"function(value){return value;}"},"aayle":{"key":"lastname","value":"function(value){return value;}"}};    
+var mappings = {"esme":{"key":"name","value":"function(value){return value;}"},"aayle":{"key":"lastname","value":"function(value){return value;}"}};    
 
 var mapIt = function(params) {
     var values = JSON.flatten(params);
