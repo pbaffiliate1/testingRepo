@@ -1,1 +1,1 @@
-return 'hi'.length
+return 'hello'.length
