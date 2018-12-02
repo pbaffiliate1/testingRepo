@@ -1,6 +1,6 @@
 var z = [ 
     ['Language', 'Speakers (in millions)'],
-    ['German',  5.85],
+    ['German',  4.12],
     ['French',  1.66],
     ['Italian', 0.316],
     ['Romansh', 0.0791]
