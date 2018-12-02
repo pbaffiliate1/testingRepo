@@ -15,7 +15,7 @@ var decision = [];
 
 //PRESCRIPT START
 var x = "HI";
-var y = 1;
+var y = 33;
 //PRESCRIPT END
 
 //RULES EVALUATION START
