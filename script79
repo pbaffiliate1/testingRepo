@@ -1,4 +1,0 @@
-var users = require("user");
-
-// Renew the provided token for user "myUser"
-return users.renewToken("john.doe@example.com", "TjBGODBEOEQ0MTpqb2huLmRvZUBleGFtcGxlLmNvbTowRkI2RkEzODg5OEEzOTRCN0JBMUU5OTY3QjE0MDY1OA==");
