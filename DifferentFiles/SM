@@ -192,13 +192,13 @@ StateMachineImpl.prototype.constructor = StateMachineImpl
 // Define states and transitions
 StateMachineImpl.prototype.transitions = {
 	"start" : {
-			"begin" : {
+			"beginner" : {
 					"code": function() {return true;},
-					"branch": "new_1"
+					"branch": "newer"
 					
 			}
 		},
-	"new_1" : {
+	"newer" : {
 		}
 }
 
