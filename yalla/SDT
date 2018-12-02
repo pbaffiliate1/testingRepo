@@ -14,21 +14,21 @@ function execute(pl) {
 var decision = [];
 
 //PRESCRIPT START
-var x = 100;
-var y = 100;
+var x = "HI";
+var y = 33;
 //PRESCRIPT END
 
 //RULES EVALUATION START
 if(typeof pl != "object") {
   return[];
 } else { 
-	  if(isAny("condition_2") && (pl != null && pl["x"] != undefined && pl["x"] == 100)){
+	  if((pl != null && pl["x"] != undefined && pl["x"] == "HI") && (pl != null && pl["condition_1"] != undefined && pl["condition_1"] == "HI")){
        decision.push({ "action_1": "y &#x3D; 2" });
 	} 
-	 else if(isAny("condition_2") && isAny("x")){
+	 else if(isAny("x") && isAny("condition_1")){
        decision.push({  });
 	} 
-	 else if(isAny("condition_2") && isAny("x")){
+	 else if(isAny("x") && isAny("condition_1")){
        decision.push({  });
 	} 
 }
