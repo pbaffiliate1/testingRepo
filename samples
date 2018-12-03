@@ -3,7 +3,8 @@ var x = [
     ['German',  5.85],
     ['French',  1.66],
     ['Italian', 0.316],
-    ['Romansh', 0.0791]
+    ['Romansh', 0.0791],
+    ['Armenian',6]
 ];
 
 return x;
