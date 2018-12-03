@@ -194,11 +194,11 @@ StateMachineImpl.prototype.transitions = {
 	"start" : {
 			"begin" : {
 					"code": function() {return true;},
-					"branch": "new_1"
+					"branch": "NEWS"
 					
 			}
 		},
-	"new_1" : {
+	"NEWS" : {
 		}
 }
 
